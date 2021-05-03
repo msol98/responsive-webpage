@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/85cdc28136.js" crossorigin="anonymous"></script>
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="assets/css/video.css">
+  <link rel="stylesheet" href="assets/css/app.css">
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+
+  <div>
+
+    <div class="blue h-80 d-flex justify-content-between">
+      <div class="col-3 pr-5 pt-35 d-none d-lg-inline-block">
+        <a class="fas fa-rss orange-rss p-1 float-right" href=""></a>
+        <span class="date pr-3 float-right">پنجشنبه - ۵ فروردین ۱۴۰۰</span>
+      </div>
+      <ul class="nav nav-tabs h-100 col-6 p-0 d-none d-lg-flex">
+        <li class="nav-item h-100">
+          <div class="btn-group nav-link border-0">
+            <a class="dropdown-toggle fas fa-search search-desktop active" data-toggle="dropdown" href="#" role="button"
+              aria-haspopup="true" aria-expanded="false"></a>
+            <div class="dropdown-menu options text-center py-1">
+              <a href="#">خبر ۱</a> |
+              <a href="#">خبر ۲</a> |
+              <a href="#">خبر ۳</a> |
+              <a href="#">خبر ۴</a> |
+              <a href="#">خبر ۵</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item h-100">
+          <div class="btn-group nav-link border-0">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">عکس</a>
+            <div class="dropdown-menu options text-center py-1">
+              <a href="#">نمونه ۱</a> |
+              <a href="#">نمونه ۲</a> |
+              <a href="#">نمونه ۳</a> |
+              <a href="#">نمونه ۴</a> |
+              <a href="#">نمونه ۵</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item h-100">
+          <div class="btn-group nav-link border-0">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">پرونده ویژه</a>
+            <div class="dropdown-menu options text-center py-1">
+              <a href="#">گزینه ۱</a> |
+              <a href="#">گزینه ۲</a> |
+              <a href="#">گزینه ۳</a> |
+              <a href="#">گزینه ۴</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item h-100">
+          <div class="btn-group nav-link border-0">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">رسانه های فارسی زبان</a>
+            <div class="dropdown-menu options text-center py-1">
+              <a href="#">شبکه ۱</a> |
+              <a href="#">شبکه ۲</a> |
+              <a href="#">شبکه ۳</a> |
+              <a href="#">شبکه ۴</a> |
+              <a href="#">شبکه ۵</a>
+            </div>
+          </div>
+        </li>
+        <li class="nav-item h-100">
+          <div class="btn-group nav-link border-0">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+              aria-expanded="false">صفحه اصلی</a>
+            <div class="dropdown-menu options text-center py-1">
+              <a href="#">اخبار جدید</a> |
+              <a href="#">شبکه خبر</a> |
+              <a href="#">تازه ها</a> |
+              <a href="#">آرشیو اخبار</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="d-lg-none pl-1 pl-sm-3">
+        <div>
+          <div class="dropdown d-inline-block">
+            <button class="fas fa-bars" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"></button>
+            <div class="dropdown-menu dark-menu" aria-labelledby="dropdownMenuButton">
+              <i class="fas fa-times float-right mt-0 mr-4"></i>
+              <a class="dropdown-item" href="#">صفحه اصلی</a>
+              <a class="dropdown-item" href="#">رسانه های فارسی زبان</a>
+              <a class="dropdown-item" href="#">پرونده ویژه</a>
+              <a class="dropdown-item" href="#">عکس</a>
+            </div>
+          </div>
+          <a href="..." class="fas fa-search search-tablet ml-2 ml-sm-5"></a>
+          <a href="..." class="fas fa-rss white-rss ml-2 ml-sm-5 d-none d-sm-inline-block"></a>
+        </div>
+      </div>
+      <div class="w-max col-sm-6 col-lg-3 d-flex justify-content-end justify-content-lg-center px-0 mr-lg-0">
+        <img class="mr-n5 py-2" src="assets/images/logo.png" alt="logo" />
+        <img src="assets/images/azadi.svg" alt="Azadi tower" />
+      </div>
+    </div>
+
+    <div class="cyan"></div>
+
+    <div class="py-2 d-lg-none">
+      <a class="fas fa-home mr-4 ml-auto d-block w-max" href=""></a>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="bg-grey pb-5">
+
+
+    <div class="d-none d-lg-block float-right mt-5 pt-5 mr-3 mr-xl-5">
+      <a class="w-max bg-white p-2 box-shadow mb-2 d-block">
+        <img src="assets/images/aparat.svg" alt="aparat" />
+      </a>
+      <a class="w-max bg-white p-2 box-shadow mb-2 d-block">
+        <img class="w-27" src="assets/images/instagram.svg" alt="instagram" />
+      </a>
+      <a class="w-max bg-white p-2 box-shadow mb-2 d-block">
+        <img src="assets/images/twitter.svg" alt="twitter" />
+      </a>
+    </div>
+
+
+
+    <div class="col-lg-10 col-xl-9 mx-auto pt-3">
+
+      <div class="row w-100 mx-auto mb-5">
+        <div class="col-lg-4 pl-lg-0 pr-lg-4 d-none d-lg-inline-block">
+          <div class="box-shadow bg-white">
+            <div>
+              <div class="col-6 py-3 px-0 text-center d-inline-block c-pointer unselected main" id="main1"
+                onclick="showSideBars('main', 1)">پربازدیدترین</div>
+              <div class="col-6 py-3 px-0 text-center d-inline-block c-pointer selected main float-right" id="main2"
+                onclick="showSideBars('main', 2)">آخرین مطالب</div>
+
+            </div>
+            <div class="px-3 py-4 main-menu d-none">
+              <div class="row border-bottom p-2 m-2 justify-content-end">
+                <span class="text-right small">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                <span class="color-red text-right pl-3">۰۱</span>
+              </div>
+              <div class="row border-bottom p-2 m-2 justify-content-end">
+                <span class="text-right small">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                <span class="color-red text-right pl-3">۰۲</span>
+              </div>
+              <div class="row border-bottom p-2 m-2 justify-content-end">
+                <span class="text-right small">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                <span class="color-red text-right pl-3">۰۳</span>
+              </div>
+              <div class="row p-2 m-2 justify-content-end">
+                <span class="text-right small">لورم ایپسوم متن ساختگی با تولید سادگی</span>
+                <span class="color-red text-right pl-3">۰۴</span>
+              </div>
+            </div>
+            <div class="px-3 py-4 main-menu">
+              <div class="row border-bottom p-2 m-2 justify-content-end">
+                <span class="text-right small">لورم ایپسوم متن ساختگی</span>
+                <span class="color-red text-right pl-3">۰۱</span>
+              </div>
+              <div class="row border-bottom p-2 m-2 justify-content-end">
+                <span class="text-right small">لورم ایپسوم متن ساختگی</span>
+                <span class="color-red text-right pl-3">۰۲</span>
+              </div>
+              <div class="row border-bottom p-2 m-2 justify-content-end">
+                <span class="text-right small">لورم ایپسوم متن ساختگی</span>
+                <span class="color-red text-right pl-3">۰۳</span>
+              </div>
+              <div class="row p-2 m-2 justify-content-end">
+                <span class="text-right small">لورم ایپسوم متن ساختگی</span>
+                <span class="color-red text-right pl-3">۰۴</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="box-shadow bg-white my-3">
+            <div>
+              <div class="col-8 py-3 px-0 text-center d-inline-block c-pointer unselected blog" id="blog1"
+                onclick="showSideBars('blog', 1)">بیشتر</div>
+              <div class="col-4 py-3 px-0 text-center d-inline-block c-pointer selected float-right blog" id="blog2"
+                onclick="showSideBars('blog', 2)">وبلاگستان</div>
+            </div>
+            <div class="px-3 py-2 blog-menu d-none">
+              <div class="row p-1 flex-row-reverse border-bottom">
+                <img src="assets/images/5.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small"> لورم ایپسوم متن ساختگی</p>
+                </div>
+              </div>
+              <div class="row p-1 flex-row-reverse border-bottom">
+                <img src="assets/images/3.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small"> لورم ایپسوم متن ساختگی</p>
+                </div>
+              </div>
+              <div class="row p-1 flex-row-reverse border-bottom">
+                <img src="assets/images/2.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small"> لورم ایپسوم متن ساختگی</p>
+                </div>
+              </div>
+              <div class="row p-1 flex-row-reverse">
+                <img src="assets/images/1.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small"> لورم ایپسوم متن ساختگی</p>
+                </div>
+              </div>
+            </div>
+            <div class="px-3 py-2 blog-menu">
+              <div class="row p-1 flex-row-reverse border-bottom">
+                <img src="assets/images/5.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small"> ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                </div>
+              </div>
+              <div class="row p-1 flex-row-reverse border-bottom">
+                <img src="assets/images/3.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                </div>
+              </div>
+              <div class="row p-1 flex-row-reverse border-bottom">
+                <img src="assets/images/2.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                </div>
+              </div>
+              <div class="row p-1 flex-row-reverse">
+                <img src="assets/images/1.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small"> لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="box-shadow bg-white">
+            <div>
+              <div class="col-6 py-3 px-0 text-center d-inline-block c-pointer unselected multi" id="multi1"
+                onclick="showSideBars('multi', 1)">بیشتر</div>
+              <div class="col-6 py-3 px-0 text-center d-inline-block c-pointer selected float-right multi" id="multi2"
+                onclick="showSideBars('multi', 2)">چند رسانه ای</div>
+            </div>
+            <div class="px-3 py-4 multi-menu d-none">
+              <div class="row p-2 flex-row-reverse border-bottom">
+                <img src="assets/images/5.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                </div>
+              </div>
+              <div class="row p-2 flex-row-reverse border-bottom">
+                <img src="assets/images/3.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                </div>
+              </div>
+              <div class="row p-2 flex-row-reverse border-bottom">
+                <img src="assets/images/2.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                </div>
+              </div>
+              <div class="row p-2 flex-row-reverse">
+                <img src="assets/images/1.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small">لورم ایپسوم متن ساختگی با تولید سادگی</p>
+                </div>
+              </div>
+            </div>
+            <div class="px-3 py-4 multi-menu">
+              <div class="row p-2 flex-row-reverse border-bottom">
+                <img src="assets/images/5.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small">لورم ایپسوم متن ساختگی با تولید </p>
+                </div>
+              </div>
+              <div class="row p-2 flex-row-reverse border-bottom">
+                <img src="assets/images/3.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small">لورم ایپسوم متن ساختگی با تولید </p>
+                </div>
+              </div>
+              <div class="row p-2 flex-row-reverse border-bottom">
+                <img src="assets/images/2.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small">لورم ایپسوم متن ساختگی با تولید </p>
+                </div>
+              </div>
+              <div class="row p-2 flex-row-reverse">
+                <img src="assets/images/1.jpg" class="col-5 px-0 images" alt="..." />
+                <div class="col-7 pl-0">
+                  <p class="text-right text-grey">یکشنبه ۲۱ دی ۱۳۹۹</p>
+                  <p class="text-right pb-3 small">لورم ایپسوم متن ساختگی با تولید </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+        <div class="col-lg-8">
+          <div class="bg-white p-0 p-lg-3 box-shadow">
+            <video width="100%" controls>
+              <source src="https://sample-videos.com/video123/mp4/360/big_buck_bunny_360p_2mb.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+
+            <div class="p-3 pb-lg-0">
+
+
+              <h1 class="h1-1">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</h1>
+
+              <p class="text py-4 border-bottom">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط
+                فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+
+              <div class="row icon justify-content-center justify-content-sm-start">
+                <a href="">
+                  <i class="fa fa-download"></i>
+                  <p>بارگذاری</p>
+                </a>
+                <a href="">
+                  <i class="fas fa-eye"></i>
+                  <p>بارگذاری</p>
+                </a>
+                <a href="">
+                  <i class="far fa-comment-alt"></i>
+                  <p>بارگذاری</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <img class="w-100 c-pointer my-5" src="assets/images/8.jpg" alt="..." />
+
+          <div class="box-shadow mt-4 d-none d-lg-block bg-white">
+            <div class="row w-100 mx-auto">
+              <div class="col-8 py-2 px-0 text-center d-inline-block c-pointer unselected"></div>
+              <div class="col-4 py-2 px-0 text-center d-inline-block c-pointer selected float-right">سایر فیلم ها</div>
+            </div>
+            <div class="row px-3 py-5">
+              <div class="col-lg-4">
+                <img src="assets/images/1.jpg" class="images mb-2 w-100" alt="..." />
+                <p class="text-center small-text">لورم ایپسوم متن ساختگی با تولید</p>
+              </div>
+              <div class="col-lg-4">
+                <img src="assets/images/3.jpg" class="images mb-2 w-100" alt="..." />
+                <p class="text-center small-text">لورم ایپسوم متن ساختگی با تولید</p>
+              </div>
+              <div class="col-lg-4">
+                <img src="assets/images/2.jpg" class="images mb-2 w-100" alt="..." />
+                <p class="text-center small-text mb-lg-5">لورم ایپسوم متن ساختگی با تولید</p>
+              </div>
+              <div class="col-lg-4">
+                <img src="assets/images/1.jpg" class="images mb-2 w-100" alt="..." />
+                <p class="text-center small-text">لورم ایپسوم متن ساختگی با تولید</p>
+              </div>
+              <div class="col-lg-4">
+                <img src="assets/images/2.jpg" class="images mb-2 w-100" alt="..." />
+                <p class="text-center small-text">لورم ایپسوم متن ساختگی با تولید</p>
+              </div>
+              <div class="col-lg-4">
+                <img src="assets/images/3.jpg" class="images mb-2 w-100" alt="..." />
+                <p class="text-center small-text">لورم ایپسوم متن ساختگی با تولید</p>
+              </div>
+            </div>
+
+            <div class="pagination d-flex justify-content-center">
+              <a href="#">&#x2039;</a>
+              <a href="#">1</a>
+              <a href="#">2</a>
+              <a href="#">3</a>
+              <a href="#">4</a>
+              <a href="#">5</a>
+              <a href="#">6</a>
+              <a href="#">&#x203A;</a>
+            </div>
+          </div>
+
+          <div class="mt-3 d-lg-none">
+            <div class="row">
+              <div class="col-lg-5">
+                <input class="white-input box-shadow w-100 p-2" placeholder="نام" />
+                <input class="white-input box-shadow w-100 my-2 p-2" type="email" placeholder="پست الکترونیک" />
+              </div>
+              <div class="col-lg-7">
+                <textarea dir="auto" class="box-shadow w-100 p-2"
+                  placeholder="دیدگاه خود را درباره این مطلب بنویسید"></textarea>
+              </div>
+            </div>
+            <button class="submit-comment rounded px-3 py-1 mt-2 col-12 col-md-3">ثبت دیدگاه</button>
+
+            <div class="mt-5">
+              <div class="comment">
+                <div class="d-inline-block">
+                  <div class="float-right justify-content-end">
+                    <span class="text-grey">۱۴:۵۰ | ۱۴۰۰/01/07</span>
+                    <i class="fa fa-calendar text-grey pl-2"></i>
+                    <span class="small pl-2">Lynda</span>
+                  </div><br />
+                  <p class="small text-right">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  <p class="text-grey float-right c-pointer">پاسخ</p>
+                </div>
+                <img src="assets/images/10.png" />
+              </div>
+
+              <div class="comment col-11 mb-4">
+                <div class="d-inline-block">
+                  <div class="float-right justify-content-end">
+                    <span class="text-grey">۱۴:۵۰ | ۱۴۰۰/01/07</span>
+                    <i class="fa fa-calendar text-grey pl-2"></i>
+                    <span class="small pl-2">Lynda</span>
+                  </div><br />
+                  <p class="small text-right">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+                  <p class="text-grey float-right c-pointer">پاسخ</p>
+                </div>
+                <img src="assets/images/10.png" />
+              </div>
+
+              <div class="comment">
+                <div class="d-inline-block">
+                  <div class="float-right justify-content-end">
+                    <span class="text-grey">۱۴:۵۰ | ۱۴۰۰/01/07</span>
+                    <i class="fa fa-calendar text-grey pl-2"></i>
+                    <span class="small pl-2">Lynda</span>
+                  </div><br />
+                  <p class="small text-right">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                    طراحان گرافیک است</p>
+                  <p class="text-grey float-right c-pointer">پاسخ</p>
+                </div>
+                <img src="assets/images/10.png" />
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <!-- ......Desktop footer...... -->
+
+  <div class="row w-100 blue py-5 d-none d-lg-flex mx-0">
+
+    <div class="col-4 px-5">
+      <p class="titles-white font-weight-bold mb-1">ما را دنبال کنید</p>
+      <div class="cyan-border mr-0 ml-auto mb-3"></div>
+      <div class="d-flex justify-content-end">
+        <a class="icons p-2 mr-3" href="#">
+          <img src="assets/images/twitter-white.svg" />
+        </a>
+        <a class="icons p-2 mr-3" href="#">
+          <img src="assets/images/instagram-white.svg" />
+        </a>
+        <a class="icons p-2 mr-3" href="#">
+          <img src="assets/images/aparat-white.svg" />
+        </a>
+        <a class="icons p-2" href="#">
+          <img src="assets/images/youtube.svg" />
+        </a>
+      </div>
+      <p class="titles-white pt-5 mb-1">عضویت در خبرنامه</p>
+      <div class="float-right">
+        <button class="submit px-3">ثبت</button>
+        <input class="email" type="email" placeholder="ایمیل خود را وارد کنید" />
+      </div>
+    </div>
+
+    <div class="col-4 pr-5">
+      <p class="titles-white font-weight-bold mb-1">مطالب پربازدید</p>
+      <div class="cyan-border mr-0 ml-auto mb-4"></div>
+      <a class="texts mb-3" href="">لورم ایپسوم متن ساختگی</a>
+      <a class="texts mb-3" href=" ">سرنگونی مجسمه تاجر معروف برده</a>
+      <a class="texts mb-3" href="">لحظه سرنگونی مجسمه</a>
+      <a class="texts mb-3" href="">لورم ایپسوم متن ساختگی</a>
+    </div>
+
+    <div class="col-4 pr-5">
+      <img src="assets/images/logo.svg" class="mr-0 ml-auto d-block" />
+      <p class="titles-white pt-5">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان
+        گرافیک است،
+        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+    </div>
+  </div>
+
+
+  <!-- ......Tablet and Mobile footer...... -->
+  <div class="blue p-5 d-lg-none">
+    <div class="row w-100">
+      <p class="titles-white pt-5 d-none d-sm-inline-block col-sm-8">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
+        صنعت چاپ، و با
+        استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است</p>
+      <img src="assets/images/logo.svg" class="col-6 mx-auto col-sm-4" />
+    </div>
+    <div class="d-flex justify-content-center mt-3">
+      <a class="icons p-2 mr-3" href="#">
+        <img src="assets/images/twitter-white.svg" class="pt-1" />
+      </a>
+      <a class="icons p-2 mr-3" href="#">
+        <img src="assets/images/instagram-white.svg" />
+      </a>
+      <a class="icons p-2 mr-3" href="#">
+        <img src="assets/images/aparat-white.svg" />
+      </a>
+      <a class="icons p-2" href="#">
+        <img src="assets/images/youtube.svg" class="pt-1" />
+      </a>
+    </div>
+  </div>
+
+
+  <div class="dark-blue text-center py-3">نقل و نشر مطالب با ذکر نام آزاد است</div>
+
+</body>
+
+</html>
+
+
+<script>
+  function showSideBars(type, num) {
+    var x = document.getElementsByClassName(type);
+    var y = document.getElementsByClassName(type + '-menu');
+    for (i = 0; i < 2; i++) {
+      x[i].className = x[i].className.replace(" unselected", "");
+      x[i].className = x[i].className.replace(" selected", "");
+      y[i].className = y[i].className.replace(" d-none", "");
+      y[i].style.display = "none";
+    }
+
+    document.getElementById(type + num).className += " selected";
+    y[num - 1].style.display = "block";
+
+    if (num == 1) {
+      document.getElementById(type + '2').className += " unselected";
+    } else if (num == 2) {
+      document.getElementById(type + '1').className += " unselected";
+    }
+  }
+</script>

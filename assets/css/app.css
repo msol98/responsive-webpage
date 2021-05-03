@@ -1,0 +1,466 @@
+@font-face {
+	 font-family: "IRANSans";
+	 src: local("IRANSans(FaNum)"), url(../fonts/IRANSans.ttf) format("truetype");
+}
+ *:not(i) {
+	 font-family: "IRANSans";
+	 font-size: 20px;
+}
+ .w-max {
+	 width: max-content !important;
+}
+ a, a:hover {
+	 text-decoration: none !important;
+}
+ .c-pointer {
+	 cursor: pointer;
+}
+ .bg-grey {
+	 background-color: #f5f7fb;
+	 padding-top: 35px;
+}
+ .color-red {
+	 color: #f90044;
+}
+ .box-shadow {
+	 box-shadow: 5px 5px 3px #d6d6d6;
+}
+ .unselected {
+	 font-size: 18px;
+	 border-bottom: 3px solid #a4a5a7;
+}
+ .selected {
+	 font-size: 18px;
+	 border-bottom: 3px solid #05e1ad;
+	 background-color: #f0fffa;
+	 font-weight: bold;
+}
+ .text-grey {
+	 font-size: 12px;
+	 color: #929292;
+}
+ .grey-border {
+	 height: 2px;
+	 width: 100%;
+	 max-width: 400px;
+	 background: #cbd2df;
+}
+ .darker {
+	 background: #5e5e5e;
+}
+ .bigger {
+	 font-size: 130%;
+}
+ .border-title {
+	 color: #1c232a;
+	 font-weight: bold;
+	 font-size: 22px;
+	 width: max-content;
+	 margin: -15px auto 0px auto;
+	 background-color: #f5f7fb;
+	 padding-left: 10px;
+	 padding-right: 10px;
+}
+ .images {
+	 object-fit: contain;
+}
+ .bg-dark-grey {
+	 background-color: #1c232a !important;
+	 color: white !important;
+}
+ .titles {
+	 color: #fff;
+	 margin: -70px 20px 0px 0px !important;
+	 z-index: 3;
+	 position: relative;
+}
+ @media (max-width: 1392px) {
+	 .titles {
+		 margin-top: -110px !important;
+	}
+}
+ @media (max-width: 991px) {
+	 .titles {
+		 margin-top: -70px !important;
+	}
+}
+ @media (max-width: 450px) {
+	 .titles {
+		 margin: -90px 0px 0px 0px !important;
+	}
+}
+ .h1 {
+	 font-weight: bold !important;
+	 font-size: 30px !important;
+}
+ @media (max-width: 673px) {
+	 .h1 {
+		 font-size: 23px !important;
+	}
+}
+ @media (max-width: 530px) {
+	 .h1 {
+		 font-size: 20px !important;
+	}
+}
+ .h3 {
+	 color: #cbd2df !important;
+	 font-size: 20px !important;
+}
+ @media (max-width: 673px) {
+	 .h3 {
+		 font-size: 16px !important;
+	}
+}
+ .fa-share-alt {
+	 font-size: 14px;
+	 color: #3a3a3a;
+}
+ .border-title {
+	 padding-bottom: 5px;
+	 border-bottom: 3px solid #05e1ad;
+}
+ .links {
+	 position: absolute;
+	 bottom: 0px;
+}
+ .fa-external-link-alt, .fa-external-link-alt ~ span {
+	 color: #929292;
+	 font-size: 10px;
+}
+ .more {
+	 background-color: #4c5361;
+	 color: #fff;
+	 width: max-content;
+	 border-radius: 50px;
+	 font-size: 14px;
+	 padding: 7px 15px;
+	 z-index: 2;
+	 position: relative;
+}
+ .ml-20 {
+	 margin-left: auto;
+	 margin-right: auto;
+}
+ @media (min-width: 991px) {
+	 .ml-20 {
+		 margin-left: 20%;
+	}
+}
+ .profile {
+	 border-radius: 50%;
+	 width: 130px;
+	 border: 5px solid #fff;
+}
+ .blue {
+	 background-color: #0150ef;
+}
+ .h-80 {
+	 height: 80px;
+
+}
+ .border-white {
+	 border: 1px solid white;
+	 border-radius: 50%;
+}
+ .name {
+	 color: #fff;
+	 font-size: 20px;
+	 font-weight: bold;
+	 text-align: right;
+	 border-bottom: 1px solid #fff;
+}
+ .about {
+	 color: #05e1ad;
+	 margin-bottom: 0px;
+	 font-size: 15px;
+}
+ .triangle {
+	 width: 0;
+	 height: 0;
+	 border-top: 142px solid transparent;
+	 border-right: 60px solid #0150ef;
+	 border-bottom: 143px solid transparent;
+	 margin-right: -0.2px;
+	 margin-top: -0.2px;
+}
+ @media (max-width: 990px) {
+	 .triangle {
+		 width: 0;
+		 height: 0;
+		 border-left: 40vw solid transparent;
+		 border-right: 40vw solid transparent;
+		 border-top: 50px solid #0150ef;
+		 border-bottom: none;
+	}
+}
+ .gradient {
+	 background-image: linear-gradient(transparent, black);
+	 height: 200px;
+	 margin-top: -200px;
+	 z-index: 2;
+	 position: relative;
+}
+ @media (max-width: 576px) {
+	 .pic {
+		 height: 400px;
+		 object-fit: cover;
+	}
+}
+ .gray-fill {
+	 color: #fff;
+	 background-color: #1c232a;
+}
+ .bg-red {
+	 background-color: #ff0040;
+}
+ .bg-blue {
+	 background-color: #3159a8;
+}
+ .logo {
+	 font-size: 16px;
+	 max-width: 200px;
+	 display: block;
+	 margin: 0px auto;
+	 cursor: pointer;
+	 padding: 15px 25px;
+	 margin-bottom: -15px;
+	 font-weight: bold;
+}
+ .logo:not(.colored) {
+	 background-color: transparent;
+	 filter: brightness(0.65);
+}
+ .w-27 {
+	 width: 27px;
+}
+ .w-80 {
+	 width: 80%;
+}
+ .custom-indicator {
+	 border-radius: 50%;
+	 width: 10px;
+	 height: 10px;
+	 border: 1px solid #fff;
+	 background-color: transparent;
+	 opacity: 1;
+}
+ .carousel-indicators li {
+	 border-radius: 50% !important;
+	 width: 10px !important;
+	 height: 10px !important;
+	 border: 1px solid #fff !important;
+	 background-color: transparent !important;
+	 opacity: 1;
+}
+ .carousel-indicators .active {
+	 background-color: #fff !important;
+}
+ .bottom-50 {
+	 bottom: -50px;
+}
+ .bottom-20 {
+	 bottom: 20px !important;
+}
+ .fa-chevron-left, .fa-chevron-right {
+	 color: black;
+	 font-size: 30px;
+}
+ @media (max-width: 991px) {
+	 .top-position {
+		 top: 250px;
+	}
+}
+ @media (max-width: 576px) {
+	 .top-position {
+		 top: 350px;
+	}
+}
+
+ .cyan {
+	 background-color: #05e1ad;
+	 height: 10px;
+}
+
+.channel {
+display: none
+}
+
+.channel:first-child {
+display: flex;
+flex-wrap: wrap;
+}
+
+.main-menu:first-child {
+display: none;
+}
+
+.nav-tabs {
+	 justify-content: space-evenly;
+	 width: 100%;
+	 border: none !important;
+	 position: static !important;
+}
+ .dropdown-toggle {
+	 font-size: 14px;
+	 color: #9fbee0;
+}
+ .dropdown-toggle::after {
+	 display: none !important;
+}
+ .nav-item .nav-link {
+	 padding: 35px 15px 0px 15px;
+	 position: static !important;
+}
+ .nav-item .nav-link::after {
+	 content: '';
+	 display: block;
+	 margin: 0px auto;
+	 width: 5px;
+	 height: 5px;
+	 border-radius: 50%;
+	 background-color: transparent;
+}
+ .nav-item .nav-link.show {
+	 background-color: #033ebb;
+}
+ .nav-item .nav-link.show>a {
+	 color: #fff;
+}
+ .nav-item .nav-link.show::after {
+	 content: "";
+	 width: 0;
+	 height: 0;
+	 border-left: 12px solid transparent;
+	 border-right: 12px solid transparent;
+	 border-bottom: 15px solid #fff;
+	 display: block;
+	 position: relative;
+	 top: 15px;
+}
+ .green-dot::after {
+	 background-color: #05e1ad !important;
+}
+.dark-menu {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 85px;
+  background-color: #000000c9 !important;
+  position: fixed !important;
+  transform: unset !important;
+}
+ .options {
+	 border-top: none !important;
+	 box-shadow: 5px 5px 3px #e8e8e8;
+	 color: #cbd2df !important;
+	 width: 100vw;
+	 left: 0px;
+	 right: 0px;
+	 transform: unset !important;
+	 will-change: unset !important;
+	 margin-top: 90px !important;
+	 border-radius: 0px !important;
+}
+.options.show {
+	 transform: unset !important;
+	 will-change: unset !important;
+}
+ .options a, .options a:hover {
+	 color: #585858;
+	 font-size: 12px;
+	 padding: 0px 10px;
+}
+
+ .orange-rss {
+	 color: #fff;
+	 background-color: #ff7b00;
+	 border-radius: 50%;
+	 font-size: 12px;
+}
+ .date {
+	 color: #fff;
+	 font-size: 12px;
+}
+ .pt-35 {
+	 padding-top: 35px;
+}
+ .search-desktop {
+	 color: #9fbee0;
+}
+ .fa-bars, .search-tablet, .white-rss, .fa-times {
+	 border: none;
+	 background-color: transparent;
+	 color: #fff;
+	 font-size: 25px;
+	 margin-top: 25px;
+}
+ .dropdown-item {
+	 color: #fff !important;
+	 text-align: center !important;
+}
+ .dropdown-item:hover {
+	 background-color: #05e1ad !important;
+}
+ .bg-green {
+	 background-color: #05e1ad
+}
+ .fa-home {
+	 color: #585858;
+}
+ .dark-blue {
+	 background-color: #033ebb;
+	 color: #fff;
+	 font-size: 10px;
+}
+ .cyan-border {
+	 height: 3px;
+	 width: 40px;
+	 background-color: #05e1ad;
+}
+ .titles-white {
+	 color: #fff;
+	 line-height: 2;
+	 font-size: 16px;
+	 text-align: right;
+}
+ .texts {
+	 color: #9fbee0;
+	 font-size: 15px;
+	 text-align: right;
+	 display: block;
+	 text-decoration: none;
+}
+ .icons {
+	 background-color: #2369f6;
+	 width: max-content;
+}
+ .icons img {
+	 width: 25px;
+}
+ @media (max-width: 991px) {
+	 .icons img {
+		 width: 35px;
+	}
+}
+ .submit {
+	 background-color: #05e1ad;
+	 color: white;
+	 font-size: 12px;
+	 border: none;
+	 height: 40px;
+}
+ .submit ~ input {
+	 font-size: 12px;
+	 border: none;
+	 outline: none;
+	 padding: 5px;
+	 height: 40px;
+}
+ .submit ~ input::placeholder {
+	 text-align: right;
+}
+
+.email {
+	width: calc(100% - 70px);
+}
+ 
